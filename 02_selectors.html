@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    /* element selectors */
+    h2 {
+      color: green;
+    }
+  
+    /* id selector(# is for id's) */
+    #article-heading-2 {
+      color: red;
+    }
+
+    /* class selector(. is for classes) */
+    .article-heading-3 {
+      color: blue;
+    }
+
+    /* multiple selectors */
+    #article-1, 
+    #article-2 {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* nested selector */
+    #article-1 p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <article id="article-1">
+    <h2>Article 1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis id fuga saepe! Excepturi reiciendis id officiis veritatis assumenda quibusdam!</p>
+  </article>
+  <article id="article-2">
+    <h2 id="article-heading-2">Article 2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sint architecto porro cupiditate amet inventore labore nulla ipsum praesentium facere.</p>
+  </article>
+  <article>
+    <h2 class="article-heading-3">Article 3</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, reiciendis amet! Iusto, modi. Ipsum eum qui porro ipsam esse provident.</p>
+  </article>
+</body>
+</html>
