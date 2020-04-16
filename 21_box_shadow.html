@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Shadows</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background: teal;
+      color: #fff;
+      
+      /* offset-x | offset-y | color */
+      box-shadow: 10px 10px teal;
+
+      /* offset-x | offset-y | blur-radius | color */
+      box-shadow: 0 0 10px teal;
+
+      /* negative values */
+      box-shadow: -5px -5px 10px teal;
+
+      /* offset-x | offset-y | blur-radius | spread-radiu | color */
+      box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+
+      /* inset |offset-x | offset-y | color */
+      box-shadow: inset 2px 2px darkslategray;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corporis!</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corporis!</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corporis!</p>
+    </div>
+  </div>
+</body>
+</html>
